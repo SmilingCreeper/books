@@ -1,0 +1,24 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>选择框跳转示例</title>  
+    <script>  
+        function redirectToPage() {  
+            var selectedOption = document.getElementById("mySelect").value;  
+            window.location.href = selectedOption;  
+        }  
+    </script>  
+</head>  
+<body>  
+  
+<label for="mySelect">选择一本书</label>  
+<select id="mySelect" onchange="redirectToPage()">  
+    <option value="xiabeize.html">下北沢规则怪谈</option>  
+</select>  
+  
+<button onclick="redirectToPage()">跳转到所选页面</button>  
+  
+</body>  
+</html>
